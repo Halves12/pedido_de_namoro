@@ -66,6 +66,15 @@
             botaoFujao.style.left = novaPosicaoX + "px";
             botaoFujao.style.top = novaPosicaoY + "px";
         });
+
+        botaoFujao.addEventListener("click", function () {
+            var novaPosicaoX = Math.random() * window.innerWidth;
+            var novaPosicaoY = Math.random() * window.innerHeight;
+
+            botaoFujao.style.position = "absolute";
+            botaoFujao.style.left = novaPosicaoX + "px";
+            botaoFujao.style.top = novaPosicaoY + "px";
+        });
         
         function positivo(){
             alert('Aceitou porque quis! não tem garantia')
