@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pedido de Namoro</title>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h2>Aceita Namorar Comigo?</h2>
+        <button class="sim" onclick="positivo()">SIM</button>
+        <button onmouseover id="botaoFujao" class="nao">NÃO</button>
+    </div>
+
+    <style>
+        body {
+            background-image: url(maxresdefault.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        #conteudo {
+            text-align: center;
+            margin-top: 12%;
+            padding: 20px;
+            color: white;
+
+        }
+
+        .sim {
+            background-color: pink;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .nao {
+        background-color: pink;
+        padding: 10px 20px;
+        border-radius: 5px;
+        }
+
+        .sim:hover {
+        background-color: purple;
+        }
+ 
+    </style>
+
+
+
+
+    <script>
+        var botaoFujao = document.getElementById("botaoFujao");
+
+        botaoFujao.addEventListener("mouseover", function () {
+            var novaPosicaoX = Math.random() * window.innerWidth;
+            var novaPosicaoY = Math.random() * window.innerHeight;
+
+            botaoFujao.style.position = "absolute";
+            botaoFujao.style.left = novaPosicaoX + "px";
+            botaoFujao.style.top = novaPosicaoY + "px";
+        });
+        
+        function positivo(){
+            alert('Aceitou porque quis! não tem garantia')
+        }
+
+        sim.classList.add('meu-botao');
+        sim.onclick = function() {
+            alert('Você Aceitou porque quis, não tem garantia! <3');
+        }
+
+    </script>
+</body>
+
+</html>
